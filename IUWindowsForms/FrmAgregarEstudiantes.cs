@@ -115,7 +115,7 @@ namespace IUWindowsForms
         {
             if (ComprobarEmail(txtCorreo.Text) == false)
             {
-                MessageBox.Show("Dirección no valida");
+                MessageBox.Show("Ingrese una direccion de correo Valida por favor");
                 txtCorreo.ForeColor = Color.DarkRed;
             }
             else

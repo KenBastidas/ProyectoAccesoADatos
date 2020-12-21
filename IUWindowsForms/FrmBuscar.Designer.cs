@@ -74,27 +74,27 @@ namespace IUWindowsForms
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(50, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "cdeula";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(49, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.label3.Text = "apellidos";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(49, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
+            this.label4.Text = "nombres";
             // 
             // txtCedula
             // 

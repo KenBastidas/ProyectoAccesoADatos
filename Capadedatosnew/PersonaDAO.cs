@@ -87,7 +87,7 @@ namespace CapaDatos
             //2. Deinfir la operaciona  relizar en el servidor
             //operacio: obetener todos lso resgistros.
             //sql(lenguaje estruturadod e conulstas)
-            string sql = "select cedula as Cédula,apellidos ,nombres, sexo, fechaNacimiento, correo, estatura, peso " +
+            string sql = "select cedula ,apellidos ,nombres, sexo, fechaNacimiento, correo, estatura, peso " +
                 "from personas " +
                 "where cedula=@cedula";
 
