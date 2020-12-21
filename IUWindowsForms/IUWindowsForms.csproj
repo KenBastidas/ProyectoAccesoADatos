@@ -52,6 +52,12 @@
     <Compile Include="FrmAgregarEstudiantes.Designer.cs">
       <DependentUpon>FrmAgregarEstudiantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscar.Designer.cs">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListadoEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAgregarEstudiantes.resx">
       <DependentUpon>FrmAgregarEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscar.resx">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoEstudiante.resx">
       <DependentUpon>FrmListadoEstudiante.cs</DependentUpon>

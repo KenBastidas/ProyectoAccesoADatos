@@ -57,17 +57,24 @@ namespace IUWindowsForms
             // 
             // dataGridViewEstudiantes
             // 
+            this.dataGridViewEstudiantes.AllowUserToAddRows = false;
+            this.dataGridViewEstudiantes.AllowUserToDeleteRows = false;
+            this.dataGridViewEstudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEstudiantes.Location = new System.Drawing.Point(12, 91);
             this.dataGridViewEstudiantes.Name = "dataGridViewEstudiantes";
-            this.dataGridViewEstudiantes.Size = new System.Drawing.Size(598, 276);
+            this.dataGridViewEstudiantes.ReadOnly = true;
+            this.dataGridViewEstudiantes.Size = new System.Drawing.Size(939, 276);
             this.dataGridViewEstudiantes.TabIndex = 2;
             // 
             // FrmListadoEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1013, 478);
             this.Controls.Add(this.dataGridViewEstudiantes);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.label1);
