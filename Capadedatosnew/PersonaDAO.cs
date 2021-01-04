@@ -47,6 +47,68 @@ namespace CapaDatos
 
             return x;
         }
+
+        public static int actualizar(Persona persona)
+        {
+            SqlConnection conexion = new SqlConnection(cadenaConexion);
+            
+
+            string sql = "update Personas set apellidos=@apellidos, nombres=@nombres, " +
+                "sexo=@sexo, fechaNacimiento=@fechaNacimiento, " +
+                "correo=@correo, estatura=@estatura, peso=@peso " +
+                "where cedula=@cedula ";
+
+            //
+            SqlCommand comando = new SqlCommand(sql, conexion);
+
+            //definir los parametros
+            comando.CommandType = CommandType.Text;
+            comando.Parameters.AddWithValue("@cedula", persona.Cedula);
+            comando.Parameters.AddWithValue("@apellidos", persona.Apellidos);
+            comando.Parameters.AddWithValue("@nombres", persona.Nombres);
+            comando.Parameters.AddWithValue("@sexo", persona.Sexo);
+            comando.Parameters.AddWithValue("@fechaNacimiento", persona.FEchaNacimiento);
+            comando.Parameters.AddWithValue("@correo", persona.Correo);
+            comando.Parameters.AddWithValue("@estatura", persona.Estatura);
+            comando.Parameters.AddWithValue("@peso", persona.Peso);
+
+            //
+            conexion.Open();
+            int x = comando.ExecuteNonQuery();//devuelve el total de filas modificadas
+            //
+            conexion.Close();
+
+            return x;
+        }
+
+        public static int eliminar(String cedula)
+        {
+            SqlConnection conexion = new SqlConnection(cadenaConexion);
+
+
+            string sql = "delete from Personas " +
+                "where cedula=@cedula ";
+
+            //
+            SqlCommand comando = new SqlCommand(sql, conexion);
+
+            //definir los parametros
+            comando.CommandType = CommandType.Text;
+            comando.Parameters.AddWithValue("@cedula", cedula);
+            
+
+            //
+            conexion.Open();
+            int x = comando.ExecuteNonQuery();//devuelve el total de filas modificadas
+            //
+            conexion.Close();
+
+            return x;
+        }
+
+
+
+
         public static DataTable getAll()
         {
             //1. difinir y configurar la conexion con el mtoor de BDD
@@ -99,8 +161,16 @@ namespace CapaDatos
             DataTable dt = new DataTable();
             ad.Fill(dt);
             Persona p = new Persona();
+            p.Cedula = "";
+            p.Apellidos = "";
+            p.Nombres = "";
+            p.Sexo = "";
+            p.Correo = "";
+            p.Estatura = 0;
+            p.Peso = 0;
+            p.Correo = "";
             //recorrer el datatable
-            foreach(DataRow fila in dt.Rows)
+            foreach (DataRow fila in dt.Rows)
             {
                 p.Cedula = fila["cedula"].ToString();
                 p.Apellidos = fila["apellidos"].ToString();
