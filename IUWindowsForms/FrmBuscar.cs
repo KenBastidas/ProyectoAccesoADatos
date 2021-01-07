@@ -107,5 +107,10 @@ namespace IUWindowsForms
             this.txtEstatura.Text="0";
             this.txtPeso.Text="0";
         }
+
+        private void cmbCedula_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -70,10 +70,11 @@ namespace IUWindowsForms
             this.cmbCedula.Name = "cmbCedula";
             this.cmbCedula.Size = new System.Drawing.Size(346, 21);
             this.cmbCedula.TabIndex = 1;
+            this.cmbCedula.SelectedIndexChanged += new System.EventHandler(this.cmbCedula_SelectedIndexChanged);
             // 
             // btnBucar
             // 
-            this.btnBucar.Location = new System.Drawing.Point(577, 63);
+            this.btnBucar.Location = new System.Drawing.Point(655, 310);
             this.btnBucar.Name = "btnBucar";
             this.btnBucar.Size = new System.Drawing.Size(94, 23);
             this.btnBucar.TabIndex = 2;
