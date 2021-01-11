@@ -36,6 +36,7 @@ namespace IUWindowsForms
             this.txtCorreo.Text = persona.Correo;
             this.txtEstatura.Text = persona.Estatura.ToString();
             this.txtPeso.Text = persona.Peso.ToString();
+
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace IUWindowsForms
             this.Close();
         }
 
-        private void toolStripButtonGuardar_Click(object sender, EventArgs e)
+        public void toolStripButtonGuardar_Click(object sender, EventArgs e)
         {
             if(this.mCedula.Length > 0)
             {
@@ -62,6 +63,7 @@ namespace IUWindowsForms
 
                 if (x > 0)
                     MessageBox.Show("Registro actualizado..");
+                
                 else
                     MessageBox.Show("No se pudo actualizar el registro");
             }

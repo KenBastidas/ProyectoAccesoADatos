@@ -30,6 +30,7 @@ namespace IUWindowsForms
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnCemail = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@ namespace IUWindowsForms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCemail = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,9 +82,19 @@ namespace IUWindowsForms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese los datos de lo Estudiantes";
             // 
+            // btnCemail
+            // 
+            this.btnCemail.Location = new System.Drawing.Point(436, 216);
+            this.btnCemail.Name = "btnCemail";
+            this.btnCemail.Size = new System.Drawing.Size(132, 23);
+            this.btnCemail.TabIndex = 28;
+            this.btnCemail.Text = "Compruebe su email";
+            this.btnCemail.UseVisualStyleBackColor = true;
+            this.btnCemail.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(558, 65);
+            this.btnCerrar.Location = new System.Drawing.Point(555, 48);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(87, 47);
             this.btnCerrar.TabIndex = 27;
@@ -94,7 +104,7 @@ namespace IUWindowsForms
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(436, 101);
+            this.btnNuevo.Location = new System.Drawing.Point(436, 130);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(87, 47);
             this.btnNuevo.TabIndex = 26;
@@ -103,7 +113,7 @@ namespace IUWindowsForms
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(436, 31);
+            this.btnGuardar.Location = new System.Drawing.Point(436, 48);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(87, 47);
             this.btnGuardar.TabIndex = 25;
@@ -254,16 +264,6 @@ namespace IUWindowsForms
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cedula";
-            // 
-            // btnCemail
-            // 
-            this.btnCemail.Location = new System.Drawing.Point(436, 216);
-            this.btnCemail.Name = "btnCemail";
-            this.btnCemail.Size = new System.Drawing.Size(132, 23);
-            this.btnCemail.TabIndex = 28;
-            this.btnCemail.Text = "Compruebe su email";
-            this.btnCemail.UseVisualStyleBackColor = true;
-            this.btnCemail.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmAgregarEstudiantes
             // 

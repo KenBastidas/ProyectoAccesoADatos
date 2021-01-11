@@ -22,7 +22,7 @@ namespace IUWindowsForms
             this.cargarGrid();
         }
 
-        private void cargarGrid()
+        public void cargarGrid()
         {
             this.dataGridViewEstudiantes.DataSource = CapaDatos.PersonaDAO.getAll();
         }
@@ -68,8 +68,8 @@ namespace IUWindowsForms
                 //open formulario actualizar
                 FrmActualizar frm1 = new FrmActualizar(cedula);
                 frm1.ShowDialog();
-
             }
+            this.cargarGrid();
         }
     }
 }
