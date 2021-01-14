@@ -34,6 +34,7 @@ namespace IUWindowsForms
             this.btnFrmListadoEstudiante = new System.Windows.Forms.Button();
             this.btnFrmBuscar = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnFrmInformeEstudiantes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -86,11 +87,22 @@ namespace IUWindowsForms
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnFrmInformeEstudiantes
+            // 
+            this.btnFrmInformeEstudiantes.Location = new System.Drawing.Point(210, 84);
+            this.btnFrmInformeEstudiantes.Name = "btnFrmInformeEstudiantes";
+            this.btnFrmInformeEstudiantes.Size = new System.Drawing.Size(130, 23);
+            this.btnFrmInformeEstudiantes.TabIndex = 11;
+            this.btnFrmInformeEstudiantes.Text = "Informe";
+            this.btnFrmInformeEstudiantes.UseVisualStyleBackColor = true;
+            this.btnFrmInformeEstudiantes.Click += new System.EventHandler(this.btnFrmInformeEstudiantes_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFrmInformeEstudiantes);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnFrmBuscar);
             this.Controls.Add(this.btnFrmListadoEstudiante);
@@ -110,5 +122,6 @@ namespace IUWindowsForms
         private System.Windows.Forms.Button btnFrmListadoEstudiante;
         private System.Windows.Forms.Button btnFrmBuscar;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnFrmInformeEstudiantes;
     }
 }

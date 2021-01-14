@@ -39,5 +39,11 @@ namespace IUWindowsForms
         {
             this.Close();
         }
+
+        private void btnFrmInformeEstudiantes_Click(object sender, EventArgs e)
+        {
+            Informes.FrmInformeEstudiantes k = new Informes.FrmInformeEstudiantes();
+            k.ShowDialog();
+        }
     }
 }
